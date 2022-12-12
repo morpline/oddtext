@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Oddtext Editor</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Oddtext</h1>
+        <div class="editor">
+            <div class="editing" contenteditable="true">
+                This is a test of:
+                <span class="wave">wave,</span>
+                <span class="shake">shake,</span>
+                <span class="quake">quake,</span>
+                <span class="rainbow">rainbow,</span>
+                and
+                <span class="chroma">chroma</span>
+                functionality.
+            </div>
+            <div class="console">
+                <input type="text" id="toInsert">
+                <label for="toInsert"></label>
+                <input type="radio" name="style" id="wave">
+                <label for="wave">Wave</label>
+                <input type="radio" name="style" id="shake">
+                <label for="shake">shake</label>
+                <input type="radio" name="style" id="quake">
+                <label for="quake">quake</label>
+                <input type="radio" name="style" id="rainbow">
+                <label for="rainbow">rainbow</label>
+                <input type="radio" name="style" id="chroma">
+                <label for="chroma">chroma</label>
+            </div>
+        </div>
+        <script src="script.js" async defer></script>
+    </body>
+</html>
