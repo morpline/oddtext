@@ -16,29 +16,70 @@
     <header>
       <h1>Oddtext</h1>
 
-      <div class="editing" contenteditable="true">
-        This is a test of:
-        <span class="wave options">wave,</span>
-        <span class="shake options">shake,</span>
-        <span class="quake options">quake,</span>
-        <span class="rainbow options">rainbow,</span>
+      <div class="editing">
+        This editor features:
+        <div class="Oddtext-wave options">wave,</div>
+        <div class="Oddtext-shake options">shake,</div>
+        <div class="Oddtext-rainbow" style="display: flex;">
+            <div class="Oddtext-rainbow">r</div>
+            <div class="Oddtext-rainbow">a</div>
+            <div class="Oddtext-rainbow">i</div>
+            <div class="Oddtext-rainbow">n</div>
+            <div class="Oddtext-rainbow">b</div>
+            <div class="Oddtext-rainbow">o</div>
+            <div class="Oddtext-rainbow">w</div>
+        </div>
         and
-        <span class="chroma">chroma</span>
+        <div class="Oddtext-chroma">chroma</div>
         functionality.
       </div>
     </header>
     <section class="tools">
-        <div class="wave">wave</div>
-        <div class="shake">shake</div>
-        <div class="quake">quake</div>
-        <div class="rainbow">rainbow</div>
-        <div class="chroma">chroma</div>
-        <div class="button insert">insert</div>
+        <input type="text" name="text" id="toInsert">
+        <div id="wave" name="wave" class="Oddtext-wave">wave</div>
+        <div id="shake" name="shake" class="Oddtext-shake">shake</div>
+        <div id="rainbow" style="display: flex;" name="rainbow">
+            <div class="Oddtext-rainbow">r</div>
+            <div class="Oddtext-rainbow">a</div>
+            <div class="Oddtext-rainbow">i</div>
+            <div class="Oddtext-rainbow">n</div>
+            <div class="Oddtext-rainbow">b</div>
+            <div class="Oddtext-rainbow">o</div>
+            <div class="Oddtext-rainbow">w</div>
+            
+        </div>
+        <div id="chroma" name="chroma" class="Oddtext-chroma">chroma</div>
+        <div id="end" name="end">insert</div>
     </section>
-    <section class="editor">
+    <section id="setcion">
+        <div style="display: flex;">
+            <div class="Oddtext-rainbow">Each </div>
+            <div class="Oddtext-rainbow">rainbow </div>
+            <div class="Oddtext-rainbow">tag </div>
+            <div class="Oddtext-rainbow">changes </div>
+            <div class="Oddtext-rainbow">the </div>
+            <div class="Oddtext-rainbow">color </div>
+            <div class="Oddtext-rainbow">of </div>
+            <div class="Oddtext-rainbow">the </div>
+            <div class="Oddtext-rainbow">next </div>
+            <div class="Oddtext-rainbow">one.</div>
+                     
+        </div>
+        <div class="Oddtext-chroma">
+            All Chroma tags are the same color.
+        </div>
+        <div class="Oddtext-shake" style="display: flex;">
+            Each  <div class="Oddtext-shake">Shake</div>  tag shakes individually.<br>
+        </div>
+        <div class="Oddtext-wave" style="display: flex;">
+            Each <div class="Oddtext-wave">Wave</div> tag moves the next one slightly.
+        </div>
+    </section>
+    <section class="editor" contenteditable="true">
         <div class="page"></div>
         <div class="page"></div>
     </section>
     <script src="script.js" async defer></script>
+    <script src="animate.js" async defer></script>
   </body>
 </html>
