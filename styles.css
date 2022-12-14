@@ -7,6 +7,7 @@ body{
     width: 100%;
     /* background-color: #ddd; */
     background: #c9ced3;
+    font-family: 'Unbounded', monospace;
 }
 
 header{
@@ -139,7 +140,4 @@ you could also add more actions using the created styles.
     align-items: center;
     background-color: rgb(65, 77, 207);
     color: rgb(243, 247, 254);
-}
-.editing {
-    
 }
