@@ -48,6 +48,12 @@ function insertFunc() {
     //pages[activePage].innerHTML = pages[activePage].innerHTML+s;
     console.dir(pages[activePage])
     //pages.item.
+    if(editing.childElementCount=0)
+    {
+        const page = document.createElement("div");
+        page.classList.add("page");
+        editing.append(page);
+    }
     pages[activePage].append(s);
     reload();
     //load();

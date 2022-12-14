@@ -84,7 +84,7 @@ function animate () {
         //console.log(Math.floor(Math.sin(waveX)*2)+2);
         colorX+=0.3;
     })
-    colorSeed+=0.1;
+    colorSeed+=0.05;
     colorX=colorSeed;
 }
 animate();
