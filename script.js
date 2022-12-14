@@ -18,6 +18,8 @@ function load () {
     chroma = document.getElementById("chroma");
 }
 function insertFunc() {
+    pages = document.querySelectorAll(".page");
+
     //console.dir(e);
     //console.log("you clicked: "+e.path[0].id);
     let s = document.createElement("div");
@@ -48,11 +50,14 @@ function insertFunc() {
     //pages[activePage].innerHTML = pages[activePage].innerHTML+s;
     console.dir(pages[activePage])
     //pages.item.
-    if(editing.childElementCount=0)
+    console.log(editing.childElementCount);
+    if(editing.childElementCount==0)
     {
         const page = document.createElement("div");
         page.classList.add("page");
         editing.append(page);
+        pages = document.querySelectorAll(".page");
+        activePage=0;
     }
     pages[activePage].append(s);
     reload();
